@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- El meta-->
+    <title>Enlaces</title>
+    <meta charset="utf-8">
+    <meta name="enlaces" content="Enlaces del blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes y stylesheet-->
+    <!-- Meter aqui las fuentes como en el ultimo ejercicio-->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" >
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');</style>
+  </head>
+
+  <body>
+    <!-- Scripts-->
+   <script>
+        // Cuando el usuario hace clic aparece un popup
+        function openPopUp() {
+          var popup = document.getElementById("popupBubble");
+          popup.classList.toggle("show");
+        }
+    </script>
+
+    <!-- Header-->
+    <include src="header.html"></include>
+
+    <!-- Principal-->
+    <main>
+        <h2>Lista de enlaces y fuentes</h2>
+        <p>Esta página es el blog imaginario que mi personaje, <span lang="en">Nancy</span> <span lang="it">Taleggo</span>, tendría. Nancy es un personaje creado
+        para una campaña del juego de rol <span class="popup" onclick="openPopUp()"> Dragones y Mazmorras <span class="popuptext" id="popupBubble">Dragones y mazmorras es un juego de rol 
+        donde varios jugadores encarnan personajes inventados mientras exploran una historia diseñada y dirigida por un Maestro de Mazmorras.</span></span>
+        La historia se ambienta en una europa del siglo diecinueve fantástica, y <span lang="en">Nancy</span> es la hija de una familia mercader burguesa
+        con afición por la naturaleza, la cocina y la caza de criaturas peligrosas. 
+        </p>
+
+        <ul>
+          <li>Logo, fondo, favicon y dibujos explicativos de los artículos están dibujados por mí.</li>
+          <li>Textura de papel para el fondo en <a href="https://www.textures4photoshop.com/tex/thumbs/seamless-paper-texture-business-card-background-thumb47.jpg">este enlace.</a></li>
+          <li><span lang="en"><i>Banner</i></span> del ankheg es de la edición de <a href="https://www.aidedd.org/monster/ankheg">2024 de Dragones y Mazmorres.</a></li>
+          <li><span lang="en"><i>Banner</i></span> de la mandrágora es de <a href="https://www.patreon.com/posts/46467310">Dungeon Strugglers</a>.</li>
+          <li><span lang="en"><i>Banner</i></span> de las recetas son del cómic <a href="https://www.milkywayediciones.com/collections/all/tragones-y-mazmorras"><cite>Tragones y Mazmorras</cite> por Ryoko Kui</a></li>
+        </ul>
+    </main>
+
+    <!-- Footer-->
+    <include src="footer.html"></include>
+  </body>
+</html>

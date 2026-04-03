@@ -1,13 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
+    <!-- El meta-->
+    <title>Animales Fantásticos y como guisarlos</title>
+    <meta charset="utf-8">
+    <meta name="home" content="Página principal del blog.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes y stylesheet-->
+    <!-- Meter aqui las fuentes como en el ultimo ejercicio-->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" >
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+</style>
   </head>
+
   <body>
+    <!-- Header-->
     <include src="header.html"></include>
-    <h1>Hello, World!</h1>
+
+    <!-- Principal-->
+    <main>
+      <img src="assets/logo.png" alt="Logo de Animales Fantásticos y como guisarlos" class="main-logo">
+      <h1>Todas las recetas de Nancy Taleggo, ¡cocinera y cazadora de toda bestia que dispongas!</h1>
+
+      <hr>
+      <article>
+        <h2>Recomendación de hoy:</h2>
+        <div class="grid-featured">
+
+          <div>
+            <a href="ankheg.html"><img src="assets/ankheg.png" alt="Ankheg en cazuela junto con otras verduras."></a>
+          </div>
+
+          <div>
+            <h3>Ankheg hervido</h3>
+            <p>¡Plato perfecto para alimentar a todo un pueblo! Acechando en cuevas, son la pesadilla de cualquier aldea minera.
+              Pero no te dejes engañar: cuánto más miedo te de, ¡más rico está! Eso sí, hay que tomar ciertas precauciones. 
+              Incluso si tienes resistencia al ácido, el daño que su veneno provoca a tus órganos internos no es moco de pavo. </p>
+              <br>
+              <p><a href="ankheg.html">¡Aquí te explico como comerlos de manera segura!</a></p>
+          </div>
+
+        </div>
+      </article>
+      <hr>
+    </main>
+
+    <!-- Footer-->
+    <include src="footer.html"></include>
   </body>
 </html>

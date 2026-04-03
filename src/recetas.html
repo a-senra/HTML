@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- El meta-->
+    <title>Recetas</title>
+    <meta charset="utf-8">
+    <meta name="recetas" content="Recetas del blog.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes y stylesheet-->
+    <!-- Meter aqui las fuentes como en el ultimo ejercicio-->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" >
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');</style>
+  </head>
+
+  <body>
+    <!-- Header-->
+    <include src="header.html"></include>
+
+    <!-- Principal-->
+    <main>
+        <h2>Lista de recetas:</h2>
+
+        <div class="grid">
+
+            <div class="recipe-thumbnail">
+                <a href="ankheg.html"><img src="assets/ankheg.png" alt="Ankheg en cazuela junto con otras verduras."></a>
+                <h3>Ankheg cocido</h3>
+                <p><span class="tag">#ankheg</span> <span class="tag">#singluten</span></p>
+                <p><time datetime="2025-11-25">1 abril, 2026</time></p>
+            </div>
+
+            <div class="recipe-thumbnail">
+                <a href="mandragora.html"><img src="assets/revuelto.png" alt="Revuelto de verduras y mandrágora"></a>
+                <h3>Revuelto de mandrágora</h3>
+                <p><span class="tag">#mandragora</span> <span class="tag">#vegano</span></p>
+                <p><time datetime="2025-11-25">12 marzo, 2026</time></p>
+            </div>
+            
+            <div class="recipe-thumbnail">
+                <a href=""><img src="assets/baos.png" alt="Plato con baos rellenos de carne de hipogrifo"></a>
+                <h3>Baos de hipogrifo</h3>
+                <p><span class="tag">#hipogrifo</span> <span class="tag">#baos</span></p>
+                <p><time datetime="2025-11-25">6 marzo, 2026</time></p>
+            </div>
+
+            <div class="recipe-thumbnail">
+                <a href=""><img src="assets/basilisco.png" alt="Imagen de un pollo entero a la parrilla pero es un basilisco."></a>
+                <h3>Basilisco a la parrilla</h3>
+                <p><span class="tag">#basilisco</span> <span class="tag">#parrilla</span></p>
+                <p><time datetime="2025-11-25">14 febrero, 2026</time></p>
+            </div>
+
+            <div class="recipe-thumbnail">
+                <a href=""><img src="assets/sopa.png" alt="Sopa en una calabaza que tiene cara humana."></a>
+                <h3>Sopa de calabaza cambiaformas</h3>
+                <p><span class="tag">#calabaza</span> <span class="tag">#vegano</span></p>
+                <p><time datetime="2025-11-25">20 enero, 2026</time></p>
+            </div>
+
+            <div class="recipe-thumbnail">
+                <a href=""><img src="assets/sorbete.png" alt="Un sorbete hecho de ghouls"></a>
+                <h3>Sorbete de Ghoul</h3>
+                <p><span class="tag">#ghoul</span> <span class="tag">#exorcismo</span></p>
+                <p><time datetime="2025-11-25">3 enero, 2026</time></p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer-->
+    <include src="footer.html"></include>
+  </body>
+</html>
