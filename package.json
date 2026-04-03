@@ -25,6 +25,7 @@
     "stylelint-config-standard": "^40.0.0"
   },
   "dependencies": {
-    "posthtml-doctype": "^1.1.1"
+    "posthtml-doctype": "^1.1.1",
+    "qrcode": "^1.5.4"
   }
 }

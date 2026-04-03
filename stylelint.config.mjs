@@ -4,8 +4,9 @@ export default {
   "rules": {
   "declaration-property-unit-allowed-list": {
      "/^border/": ["px"],
-     "/^padding|^gap/": ["rem"]
+     "/^padding|^gap/": ["rem"],
+     "/^border-radius/": ["rem"]
     },
-    "unit-allowed-list": ["%", "deg", "px", "rem", "ms"]
+    "unit-allowed-list": ["%", "deg", "px", "rem", "ms", "fr"]
   }
 };
