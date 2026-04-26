@@ -303,6 +303,7 @@ article {
 
 
 /** RESPONSIVE OVERRIDES **/
+
 @media screen and (width <= 1200px) {
   body {
     margin-left: 10rem;
@@ -330,7 +331,7 @@ article {
   .grid, .grid div{
     display:grid;
     grid-template-columns: none;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr, 1fr;
   }
 }
 
@@ -338,6 +339,13 @@ article {
   body {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+
+  .grid, .grid div{
+    display:grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr, 1fr;
   }
 
   p{
