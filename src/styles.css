@@ -13,15 +13,17 @@
   animation: slide 120s infinite linear;
 }
 
-@keyframes bounceIn {
+@keyframes bounce_in {
   0% {
     transform: translateY(-100.0);
     opacity: 0;
   }
+
   60% {
     transform: translateY(20.0);
     opacity: 0.8;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -61,8 +63,7 @@ h1 {
   line-height: 2.0rem;
   margin-top: 3rem;
   margin-bottom: 8rem;
-
-  animation: bounceIn 1s;
+  animation: bounce_in 1s;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
 }
@@ -109,10 +110,10 @@ img{
   height: 12rem;
   width: 100%;
   margin-top: 5rem;
-
-  animation: bounceIn 1s;
+  animation: bounce_in 1s;
   animation-fill-mode: forwards;
 }
+
 .index{
   text-align: center;
 }
@@ -121,11 +122,9 @@ img{
   opacity: 0;
   height: 14rem;
   width: auto;
-
-  animation: bounceIn 1s;
+  animation: bounce_in 1s;
   animation-fill-mode: forwards;
   animation-delay: 0.2s;
-
   clip-path: polygon(50% 10%, 100% 31%, 100% 69%, 50% 90%, 0 69%, 0 32%);
   transition: clip-path 0.3s;
 }
@@ -283,9 +282,8 @@ article {
 .grid{
   row-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
-
   opacity: 0;
-  animation: bounceIn 1s;
+  animation: bounce_in 1s;
   animation-fill-mode: forwards;
 }
 
@@ -388,6 +386,7 @@ article {
     display:grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .main-logo img{
     margin-top:0.5rem;
   }
@@ -397,6 +396,7 @@ article {
     width: 100%;
   
   }
+
   .portrait img{
     height: 14rem;
     width: auto;
@@ -417,6 +417,21 @@ article {
     text-indent: 0 each-line;
   }
 
+  footer {
+  grid-template-columns: none;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  }
+
+}
+
+@media only screen and (width <= 600px){
+  .grid-featured {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+  }
+
   header {
     flex-direction: column;
     gap: 0;
@@ -432,24 +447,6 @@ article {
     height: 80px;
     width: auto;
   }
-
-  footer {
-  grid-template-columns: none;
-  grid-template-rows: 1fr;
-  justify-content: space-between;
-  }
-
-}
-
-@media only screen and (width <= 600px){
-
-  .grid-featured {
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr;
-  }
-
-
 
   h1{
     font-size: 2.0rem;

@@ -7,6 +7,6 @@ export default {
      "/^padding|^gap/": ["rem"],
      "/^border-radius/": ["rem"]
     },
-    "unit-allowed-list": ["%", "deg", "px", "rem", "ms", "fr"]
+    "unit-allowed-list": ["%", "deg", "px", "rem", "ms", "fr", "s"]
   }
 };
