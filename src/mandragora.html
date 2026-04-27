@@ -11,7 +11,9 @@
     <!-- Meter aqui las fuentes como en el ultimo ejercicio-->
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon" >
-    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');</style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+</style>
   </head>
 
   <body>
@@ -20,7 +22,11 @@
 
     <!-- Principal-->
     <main>
-        <img src="assets/mandragora_banner.webp" alt="Ilustración de una mandragora bebé.">
+        <picture>
+            <source media="(width < 600px)" srcset="assets/mandragora_banner_small.webp" />
+            <source media="(width >= 600px)" srcset="assets/mandragora_banner.webp" />
+            <img src="assets/mandragora_banner.webp" alt="Imagen de una mandrágora" />
+        </picture>        
         <hr>
         <h2>Revuelto de mandrágora</h2>
 
@@ -50,7 +56,13 @@
             </p>
 
             <figure>
-                <img src="assets/mandragora_corte1.webp" alt="Dibujo de como agarrar el tallo de una mandrágora y cortarle el cuello con un cuchillo.">
+                <picture>
+                    <source media="(width < 600px)" srcset="assets/mandragora_corte1_v.webp" />
+                    <source media="(width >= 600px)" srcset="assets/mandragora_corte1.webp" />
+                    <img src="assets/mandragora_corte1.webp" alt="Dibujo de como agarrar el tallo de una mandrágora y cortarle el cuello con un cuchillo.">
+                </picture>
+
+                
                 <figcaption>Ejemplo de cómo cortar una mandrágora.</figcaption>
             </figure>  
             
@@ -67,7 +79,12 @@
             </p>
 
             <figure>
-                <img src="assets/mandragora_corte2.webp" alt="Dibujo de una mandrágora sin cabeza y un corte vertical a lo largo del cuerpo.">
+                <picture>
+                    <source media="(width < 600px)" srcset="assets/mandragora_corte2_v.webp" />
+                    <source media="(width >= 600px)" srcset="assets/mandragora_corte2.webp" />
+                    <img src="assets/mandragora_corte2.webp" alt="Dibujo de una mandrágora sin cabeza y un corte vertical a lo largo del cuerpo.">
+                </picture>
+                
                 <figcaption>Corte vertical</figcaption>
             </figure> 
             

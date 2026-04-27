@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon" >
     <link rel="stylesheet" href="styles.css" type="text/css">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 </style>
   </head>
 
@@ -21,8 +21,19 @@
     <include src="header.html"></include>
 
     <!-- Principal-->
-    <main>
-      <img src="assets/logo.webp" alt="Logo de Animales Fantásticos y como guisarlos" class="main-logo">
+    <main class="index">
+      <picture class="main-logo">
+        <source media="(width < 850px)" srcset="assets/logo_banner_v.svg" />
+        <source media="(width >= 850px)" srcset="assets/logo_banner.svg" />
+        <img src="assets/logo_banner.svg" alt="Logo de Animales Fantásticos y como guisarlos" />
+      </picture>
+
+      <picture class="portrait">
+        <source media="(max-width:850px)" width="320" height="480" srcset="assets/nancy.webp">
+        <source media="(min-width:850px)" width="600" height="900" srcset="assets/nancy.webp">
+        <img src="assets/nancy.webp" width="600" height="900" alt="Retrato de la autora Nancy Taleggo">
+      </picture>
+
       <h1>Todas las recetas de Nancy Taleggo, ¡cocinera y cazadora de toda bestia que dispongas!</h1>
 
       <hr>

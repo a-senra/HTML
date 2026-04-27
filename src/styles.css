@@ -4,13 +4,36 @@
 	--red: #f15937;
 	--blue: #5093bd;
 	--grey: #485154;
-	--title-f: "Amarante", serif;
+	--title-f: "New Rocker", system-ui;
 	--text-f: "Zain", sans-serif;
 
   background-image: url("assets/fondo.webp");
   background-repeat: repeat;
   background-size: 10.0rem;
+  animation: slide 120s infinite linear;
 }
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-100.0);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(20.0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  100% {
+    background-position: 800px,100px;
+  }
+}
+
 
 body {
   color: var(--black);
@@ -32,16 +55,18 @@ h1, h2, h3 {
 }
 
 h1 {
+  opacity: 0;
   font-size: 2.5rem;
   text-align: center;
   line-height: 2.0rem;
-  margin-top: 0;
+  margin-top: 3rem;
   margin-bottom: 8rem;
+
+  animation: bounceIn 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
-.main-logo{
-  margin-top: 10rem;
-}
 
 h2 {
   font-size: 2.0rem;
@@ -73,9 +98,40 @@ a:hover, .popup{
   text-decoration-line:underline;
 }
 
-img {
+img{
   height: auto;
   width: 100%;
+}
+
+
+.main-logo img{
+  opacity: 0;
+  height: 12rem;
+  width: 100%;
+  margin-top: 5rem;
+
+  animation: bounceIn 1s;
+  animation-fill-mode: forwards;
+}
+.index{
+  text-align: center;
+}
+
+.portrait img{
+  opacity: 0;
+  height: 14rem;
+  width: auto;
+
+  animation: bounceIn 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+
+  clip-path: polygon(50% 10%, 100% 31%, 100% 69%, 50% 90%, 0 69%, 0 32%);
+  transition: clip-path 0.3s;
+}
+
+.portrait img:hover{
+  clip-path: polygon(49% 17%, 95% 35%, 95% 63%, 49% 80%, 4% 63%, 4% 36%);
 }
 
 li {
@@ -115,6 +171,7 @@ time {
 section{
   margin-bottom: 3rem;
 }
+
 
 
 /*** HEADER ***/
@@ -226,6 +283,10 @@ article {
 .grid{
   row-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
+
+  opacity: 0;
+  animation: bounceIn 1s;
+  animation-fill-mode: forwards;
 }
 
 .grid div{
@@ -318,34 +379,38 @@ article {
 
 @media screen and (width <= 850px) {
   body {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 1rem;
   }
 
-  .grid-featured {
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr;
-  }
-
-  .grid, .grid div{
+  .grid{
     display:grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
   }
+  .main-logo img{
+    margin-top:0.5rem;
+  }
+
+  .main-logo img{
+    height: auto;
+    width: 100%;
+  
+  }
+  .portrait img{
+    height: 14rem;
+    width: auto;
+
+  }
+
+
 }
 
 @media screen and (width <= 760px) {
   body {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-
-  .grid, .grid div{
-    display:grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr, 1fr;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    padding: 1rem;
   }
 
   p{
@@ -377,19 +442,24 @@ article {
 }
 
 @media only screen and (width <= 600px){
-  body {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    padding: 1rem;
+
+  .grid-featured {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
   }
 
-  .main-logo{
-    margin-top: 2rem;
-  }
+
 
   h1{
     font-size: 2.0rem;
     margin-bottom: 1rem;
+  }
+
+  .grid, .grid div{
+    display:grid;
+    grid-template-columns: 1fr;
+   
   }
 
   hr {

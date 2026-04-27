@@ -11,7 +11,9 @@
     <!-- Meter aqui las fuentes como en el ultimo ejercicio-->
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon" >
-    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');</style>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+</style>
   </head>
 
   <body>
@@ -20,7 +22,12 @@
 
     <!-- Principal-->
     <main>
-        <img src="assets/ankheg_banner.webp" alt="Ilustración de un ankheg levantado">
+        <picture>
+            <source media="(width < 600px)" srcset="assets/ankheg_banner_small.webp" />
+            <source media="(width >= 600px)" srcset="assets/ankheg_banner.webp" />
+            <img src="assets/ankheg_banner.webp" alt="Imagen de un Ankheg" />
+        </picture>
+        
         <hr>
         <h2>Ankheg cocido</h2>
 
@@ -52,7 +59,11 @@
             </p>
 
             <figure>
-                <img src="assets/ankheg_corte1.webp" alt="Diagrama de donde cortar a un ankheg">
+                <picture>
+                    <source media="(width < 600px)" srcset="assets/ankheg_corte1_v.webp" />
+                    <source media="(width >= 600px)" srcset="assets/ankheg_corte1.webp" />
+                    <img src="assets/ankheg_corte1.webp" alt="Diagrama de donde cortar a un ankheg">
+                </picture>
                 <figcaption>Diagrama de sangrado de un ankheg</figcaption>
             </figure>
             
@@ -69,7 +80,11 @@
             </p>
 
             <figure>
-                <img src="assets/ankheg_corte2.webp" alt="Diagrama de como trocear a un ankheg.">
+                <picture>
+                    <source media="(width < 600px)" srcset="assets/ankheg_corte2_v.webp" />
+                    <source media="(width >= 600px)" srcset="assets/ankheg_corte2.webp" />
+                    <img src="assets/ankheg_corte2.webp" alt="Diagrama de como trocear a un ankheg.">
+                </picture>
                 <figcaption>Diagrama de troceado de un ankheg</figcaption>
             </figure>  
             
