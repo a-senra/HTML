@@ -4,8 +4,8 @@
 	--red: #b53b20;
 	--blue: #5093bd;
 	--grey: #485154;
-	--title-f: "New Rocker", system-ui;
-	--text-f: "Zain", sans-serif;
+	--title-f: "Times New Roman", Times, serif;
+	--text-f: "Verdana", Geneva, Tahoma, sans-serif;
 
   background-image: url("assets/fondo.webp");
   background-repeat: repeat;
