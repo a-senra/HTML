@@ -11,9 +11,9 @@
     <!-- Meter aqui las fuentes como en el ultimo ejercicio-->
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon" >
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -25,7 +25,7 @@
         <picture>
             <source media="(width < 600px)" srcset="assets/mandragora_banner_small.webp" />
             <source media="(width >= 600px)" srcset="assets/mandragora_banner.webp" />
-            <img src="assets/mandragora_banner.webp" alt="Imagen de una mandrágora" />
+            <img src="assets/mandragora_banner.webp" fetchpriority="high" alt="Imagen de una mandrágora" />
         </picture>        
         <hr>
         <h2>Revuelto de mandrágora</h2>
@@ -33,7 +33,7 @@
         <section>
             <div class="grid-featured">
                 <div>
-                    <img src="assets/revuelto.webp" alt="Revuelto de verduras y mandrágora.">
+                    <img src="assets/revuelto.webp" fetchpriority="high" alt="Revuelto de verduras y mandrágora.">
                 </div>
 
                 <div>

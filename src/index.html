@@ -11,9 +11,9 @@
     <!-- Meter aqui las fuentes como en el ultimo ejercicio-->
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon" >
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -25,13 +25,13 @@
       <picture class="main-logo">
         <source media="(width < 850px)" srcset="assets/logo_banner_v.svg" />
         <source media="(width >= 850px)" srcset="assets/logo_banner.svg" />
-        <img src="assets/logo_banner.svg" alt="Logo de Animales Fantásticos y como guisarlos" />
+        <img src="assets/logo_banner.svg" fetchpriority="high" alt="Logo de Animales Fantásticos y como guisarlos" />
       </picture>
 
       <picture class="portrait">
-        <source media="(max-width:850px)" width="320" height="480" srcset="assets/nancy.webp">
-        <source media="(min-width:850px)" width="600" height="900" srcset="assets/nancy.webp">
-        <img src="assets/nancy.webp" width="600" height="900" alt="Retrato de la autora Nancy Taleggo">
+        <source media="(max-width:850px)" width="320" height="480" srcset="assets/nancy.webp?as=webp&width=125" type="image/webp">
+        <source media="(min-width:850px)" width="600" height="900" srcset="assets/nancy.webp?as=webp&width=200" type="image/webp">
+        <img src="assets/nancy.webp?as=webp&width=600" type="image/webp" width="600" height="900" alt="Retrato de la autora Nancy Taleggo">
       </picture>
 
       <h1>Todas las recetas de Nancy Taleggo, ¡cocinera y cazadora de toda bestia que dispongas!</h1>
