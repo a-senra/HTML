@@ -1,7 +1,7 @@
 :root{
 	--black: #303030;
 	--white: #fff;
-	--red: #f15937;
+	--red: #b53b20;
 	--blue: #5093bd;
 	--grey: #485154;
 	--title-f: "New Rocker", system-ui;
@@ -177,7 +177,7 @@ section{
 header {
     display:flex;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1.5rem;
     justify-content: space-between;
     align-items: center;
     height: 10%;
@@ -434,13 +434,14 @@ article {
 
   header {
     flex-direction: column;
-    gap: 0;
+    gap: 2rem;
   }
 
   header nav ul{
     display:inline;
     gap: 0.2rem;
     list-style: none;
+    line-height: 2rem;
   }
 
   header img{
